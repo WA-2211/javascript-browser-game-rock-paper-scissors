@@ -26,6 +26,8 @@ function play(event){
     console.log('Compuetr Choice:', computerChoice)
 
     //3. compare my choice vs computer choice
+    compareChoices()
+    console.log(message)
     //4. display winner
     
 }
@@ -42,6 +44,24 @@ function getComputerChoice(){
 }
 
 function compareChoices(){
+    if(playerChoice === computerChoice){
+        message = 'Tie game: Try again!'
+    }
+
+    else if (playerChoice === 'rock' && computerChoice === 'scissors'){
+        message = 'You Win!'
+
+    }
+     else if (playerChoice === 'paper' && computerChoice === 'rock'){
+        message = 'You Win!'
+
+    } else if (playerChoice === 'sicssors' && computerChoice === 'paper'){
+        message = 'You Win!'
+
+    }
+    else {
+        message = 'You lose :( '
+    }
   
 }
 
