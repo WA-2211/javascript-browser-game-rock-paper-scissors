@@ -18,14 +18,31 @@ let message
 /*-------------------------------- Functions --------------------------------*/
 
 function play(event){
+    //1. Identify what choice I picked
     getPlayerChoice(event)
-    console.log(playerChoice)
+    console.log('Player Choice:' ,playerChoice)
+    //2. Randomly pick computer choice
+    getComputerChoice()
+    console.log('Compuetr Choice:', computerChoice)
 
+    //3. compare my choice vs computer choice
+    //4. display winner
+    
 }
 
 function getPlayerChoice(event){
     playerChoice = event.target.id
 
+}
+
+function getComputerChoice(){
+
+    computerChoice = choices[Math.floor(Math.random() * 3)]
+
+}
+
+function compareChoices(){
+  
 }
 
 /*----------------------------- Event Listeners -----------------------------*/
