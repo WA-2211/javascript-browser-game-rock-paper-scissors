@@ -29,7 +29,7 @@ function play(event){
     compareChoices()
     console.log(message)
     //4. display winner
-    
+    resultDisplayElement.textContent = message
 }
 
 function getPlayerChoice(event){
